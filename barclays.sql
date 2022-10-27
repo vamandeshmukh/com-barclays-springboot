@@ -15,4 +15,5 @@ insert into dep_table (department_id, department_name, city) values (12, 'Admin'
 insert into dep_table (department_id, department_name, city) values (13, 'Accounts', 'Chennai');
 insert into dep_table (department_id, department_name, city) values (14, 'Production', 'Pune');
 
+commit; 
 
