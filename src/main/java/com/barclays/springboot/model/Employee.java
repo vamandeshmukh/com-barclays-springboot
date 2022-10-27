@@ -2,14 +2,21 @@ package com.barclays.springboot.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name = "emp_table")
 public class Employee {
 
 	@Id
+//	@GeneratedValue(strategy = GenerationType.IDENTITY) // for other DBs
+	@GenericGenerator(name = "emp_seq", strategy = "increment")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "emp_seq")
 	@Column(name = "employee_id")
 	private int employeeId;
 
