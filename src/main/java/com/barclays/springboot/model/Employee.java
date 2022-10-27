@@ -1,9 +1,22 @@
 package com.barclays.springboot.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "emp_table")
 public class Employee {
 
+	@Id
+	@Column(name = "employee_id")
 	private int employeeId;
+
+	@Column(name = "first_name")
 	private String firstName;
+
+	@Column(name = "salary")
 	private double salary;
 
 	public Employee() {
