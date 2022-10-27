@@ -666,3 +666,28 @@
 2022-10-27 16:05:32.091  INFO 18844 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
 2022-10-27 16:05:32.100  INFO 18844 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
 2022-10-27 16:05:32.182  INFO 18844 --- [restartedMain] com.barclays.springboot.App              : Starting..
+2022-10-27 16:05:32.262  INFO 18844 --- [restartedMain] com.barclays.springboot.App              : Starting App using Java 17.0.3 on VAMUX with PID 18844 (D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot)
+2022-10-27 16:05:32.262  INFO 18844 --- [restartedMain] com.barclays.springboot.App              : No active profile set, falling back to 1 default profile: "default"
+2022-10-27 16:05:32.495  INFO 18844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-27 16:05:32.502  INFO 18844 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2022-10-27 16:05:32.580  INFO 18844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-10-27 16:05:32.581  INFO 18844 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-27 16:05:32.581  INFO 18844 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-27 16:05:32.600  INFO 18844 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-27 16:05:32.600  INFO 18844 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 335 ms
+2022-10-27 16:05:32.624  INFO 18844 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-27 16:05:32.627  INFO 18844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-10-27 16:05:32.639  INFO 18844 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-10-27 16:05:32.640  INFO 18844 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-27 16:05:32.683  INFO 18844 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-27 16:05:32.683  INFO 18844 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 16:05:32.776  WARN 18844 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-27 16:05:33.204  INFO 18844 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-27 16:05:33.214  INFO 18844 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-10-27 16:05:33.219  INFO 18844 --- [restartedMain] com.barclays.springboot.App              : Started App in 1.027 seconds (JVM running for 296.211)
+2022-10-27 16:05:33.220  INFO 18844 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-27 16:05:33.220  INFO 18844 --- [restartedMain] com.barclays.springboot.App              : Started
+2022-10-27 16:05:42.211  INFO 18844 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-27 16:05:42.211  INFO 18844 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-27 16:05:42.212  INFO 18844 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-27 16:05:42.311  INFO 18844 --- [http-nio-8082-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 70 ms
