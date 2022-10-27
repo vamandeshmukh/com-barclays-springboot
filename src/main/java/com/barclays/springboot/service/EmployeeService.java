@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.barclays.springboot.exception.EmployeeNotFoundException;
 import com.barclays.springboot.model.Employee;
 import com.barclays.springboot.repository.EmployeeRepository;
 
@@ -33,7 +34,7 @@ public class EmployeeService {
 		} else {
 			String errorMessage = "Employee with eid " + employeeId + " not found.";
 			LOG.error(errorMessage);
-			throw new RuntimeException(errorMessage);
+			throw new EmployeeNotFoundException(errorMessage);
 		}
 	}
 
