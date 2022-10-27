@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.barclays.springboot.model.Employee;
 import com.barclays.springboot.service.EmployeeService;
 
-//http://localhost:8082/swagger-ui/index.html
+// http://localhost:8082/swagger-ui/index.html
 
 @RestController
 public class EmployeeController {
