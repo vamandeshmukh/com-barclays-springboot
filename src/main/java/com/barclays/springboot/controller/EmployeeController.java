@@ -23,4 +23,10 @@ public class EmployeeController {
 		return empService.getEmployeeById(employeeId);
 	}
 
+//	@??("/add-emp")
+	public Employee addEmp(Employee employee) {
+		return empService.addEmployee(employee);
+
+	}
+
 }

@@ -15,13 +15,17 @@ public class EmployeeService {
 	EmployeeRepository empRepository;
 
 //	insert into emp_table (employee_id, first_name, salary) values (101, 'Sonu', 90000);
-	
+
 	public Employee getEmployeeById(int employeeId) {
 		Optional<Employee> empOptional = empRepository.findById(employeeId);
-		System.out.println(empOptional.isPresent());
 		Employee emp = empOptional.get();
 		System.out.println(emp.toString());
 		return emp;
+	}
+
+	public Employee addEmployee(Employee employee) {
+		System.out.println(employee.toString());
+		return empRepository.save(employee);
 	}
 
 }
