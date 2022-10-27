@@ -489,3 +489,64 @@
 2022-10-27 15:36:33.740  INFO 19996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
 2022-10-27 15:36:33.787  WARN 19996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-10-27 15:36:34.074  INFO 19996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-27 15:36:34.081  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-10-27 15:36:34.083  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started App in 0.551 seconds (JVM running for 2068.494)
+2022-10-27 15:36:34.084  INFO 19996 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-27 15:36:34.084  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started
+2022-10-27 15:36:44.905  INFO 19996 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-27 15:36:44.906  INFO 19996 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-27 15:36:44.907  INFO 19996 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-27 15:36:45.165  INFO 19996 --- [http-nio-8082-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 82 ms
+2022-10-27 15:37:09.852  WARN 19996 --- [http-nio-8082-exec-8] c.b.springboot.service.EmployeeService   : Employees with the name Pooja not found.
+2022-10-27 15:37:09.856  WARN 19996 --- [http-nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.barclays.springboot.exception.EmployeeNotFoundException: Employees with the name Pooja not found.]
+2022-10-27 15:37:55.818  WARN 19996 --- [http-nio-8082-exec-2] c.b.springboot.service.EmployeeService   : Employees with the name Some name not found.
+2022-10-27 15:37:55.819  WARN 19996 --- [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.barclays.springboot.exception.EmployeeNotFoundException: Employees with the name Some name not found.]
+2022-10-27 15:38:08.839  INFO 19996 --- [http-nio-8082-exec-3] c.b.springboot.service.EmployeeService   : getAllEmployees
+2022-10-27 15:38:37.205  INFO 19996 --- [http-nio-8082-exec-4] c.b.springboot.service.EmployeeService   : addEmployee Employee [employeeId=104, firstName=Teena, salary=898989.0]
+2022-10-27 15:39:07.561  INFO 19996 --- [http-nio-8082-exec-5] c.b.springboot.service.EmployeeService   : updateEmployee Employee [employeeId=104, firstName=Sonam, salary=101010.0]
+2022-10-27 15:39:07.561  INFO 19996 --- [http-nio-8082-exec-5] c.b.springboot.service.EmployeeService   : getEmployeeById 104
+2022-10-27 15:39:07.565  WARN 19996 --- [http-nio-8082-exec-5] c.b.springboot.service.EmployeeService   : Employee with eid 104 not found.
+2022-10-27 15:39:07.566  WARN 19996 --- [http-nio-8082-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.barclays.springboot.exception.EmployeeNotFoundException: Employee with eid 104 not found.]
+2022-10-27 15:39:18.297  INFO 19996 --- [http-nio-8082-exec-6] c.b.springboot.service.EmployeeService   : updateEmployee Employee [employeeId=111, firstName=Sonam, salary=101010.0]
+2022-10-27 15:39:18.297  INFO 19996 --- [http-nio-8082-exec-6] c.b.springboot.service.EmployeeService   : getEmployeeById 111
+2022-10-27 15:39:40.932  INFO 19996 --- [http-nio-8082-exec-7] c.b.springboot.service.EmployeeService   : getEmployeeById 104
+2022-10-27 15:39:40.935  WARN 19996 --- [http-nio-8082-exec-7] c.b.springboot.service.EmployeeService   : Employee with eid 104 not found.
+2022-10-27 15:39:40.936  WARN 19996 --- [http-nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.barclays.springboot.exception.EmployeeNotFoundException: Employee with eid 104 not found.]
+2022-10-27 15:39:49.392  INFO 19996 --- [http-nio-8082-exec-8] c.b.springboot.service.EmployeeService   : getEmployeeById 1105
+2022-10-27 15:39:49.394  WARN 19996 --- [http-nio-8082-exec-8] c.b.springboot.service.EmployeeService   : Employee with eid 1105 not found.
+2022-10-27 15:39:49.395  WARN 19996 --- [http-nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.barclays.springboot.exception.EmployeeNotFoundException: Employee with eid 1105 not found.]
+2022-10-27 15:39:55.769  INFO 19996 --- [http-nio-8082-exec-9] c.b.springboot.service.EmployeeService   : getEmployeeById 105
+2022-10-27 15:39:55.772  INFO 19996 --- [http-nio-8082-exec-9] c.b.springboot.service.EmployeeService   : deleteEmployeeById 105
+2022-10-27 15:47:45.416  INFO 19996 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2022-10-27 15:47:45.489  INFO 19996 --- [Thread-87] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-27 15:47:45.489  INFO 19996 --- [Thread-87] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-27 15:47:45.492  INFO 19996 --- [Thread-87] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:47:45.494  INFO 19996 --- [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2022-10-27 15:47:45.497  INFO 19996 --- [Thread-87] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2022-10-27 15:47:45.537  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting..
+2022-10-27 15:47:45.563  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting App using Java 17.0.3 on VAMUX with PID 19996 (D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot)
+2022-10-27 15:47:45.563  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : No active profile set, falling back to 1 default profile: "default"
+2022-10-27 15:47:46.180  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-27 15:47:46.188  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2022-10-27 15:47:46.254  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-10-27 15:47:46.255  INFO 19996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-27 15:47:46.255  INFO 19996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-27 15:47:46.275  INFO 19996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-27 15:47:46.276  INFO 19996 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 710 ms
+2022-10-27 15:47:46.302  INFO 19996 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-27 15:47:46.304  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Starting...
+2022-10-27 15:47:46.320  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Start completed.
+2022-10-27 15:47:46.320  INFO 19996 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-27 15:47:46.346  INFO 19996 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-27 15:47:46.346  INFO 19996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:47:46.416  WARN 19996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-27 15:47:46.956  INFO 19996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-27 15:47:46.969  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-10-27 15:47:46.973  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started App in 1.432 seconds (JVM running for 2741.384)
+2022-10-27 15:47:46.975  INFO 19996 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-27 15:47:46.976  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started
+2022-10-27 15:47:49.158  INFO 19996 --- [RMI TCP Connection(97)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-27 15:47:49.168  INFO 19996 --- [RMI TCP Connection(97)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-27 15:47:49.172  INFO 19996 --- [RMI TCP Connection(97)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:47:49.173  INFO 19996 --- [RMI TCP Connection(97)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2022-10-27 15:47:49.178  INFO 19996 --- [RMI TCP Connection(97)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
