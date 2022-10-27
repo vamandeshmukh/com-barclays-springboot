@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ComBarclaysSpringbootApplication {
+public class App {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ComBarclaysSpringbootApplication.class, args);
+		SpringApplication.run(App.class, args);
 	}
 
 }
