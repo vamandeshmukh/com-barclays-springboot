@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -21,6 +23,8 @@ public class Employee {
 	private int employeeId;
 
 	@Column(name = "first_name")
+	@NotNull(message = "firstName can not be null.")
+	@Size(min = 3, max = 40, message = "firstName should be min 3 and max 40 characters.")
 	private String firstName;
 
 	@Column(name = "salary")
