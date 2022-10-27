@@ -29,17 +29,20 @@ public class EmployeeService {
 	public Employee getEmployeeById(int employeeId) { //
 		LOG.info("getEmployeeById " + employeeId);
 		Optional<Employee> empOptional = empRepository.findById(employeeId);
-		if (empOptional.isPresent()) {
+		if (empOptional.isPresent())
 			return empOptional.get();
-		} else {
-			String errorMessage = "Employee with eid " + employeeId + " not found.";
-			LOG.error(errorMessage);
-			throw new EmployeeNotFoundException(errorMessage);
-		}
+		String errorMessage = "Employee with eid " + employeeId + " not found.";
+		LOG.warn(errorMessage);
+		throw new EmployeeNotFoundException(errorMessage);
 	}
 
 	public List<Employee> getEmployeeByFirstName(String firstName) {
-		return empRepository.findByFirstName(firstName);
+		List<Employee> empList = empRepository.findByFirstName(firstName);
+		if (!empList.isEmpty())
+			return empList;
+		String errorMessage = "Employees with the name " + firstName + " not found.";
+		LOG.warn(errorMessage);
+		throw new EmployeeNotFoundException(errorMessage);
 	}
 
 	public Employee addEmployee(Employee employee) {

@@ -328,3 +328,164 @@
 2022-10-27 15:31:22.992  INFO 19996 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
 2022-10-27 15:31:22.995  INFO 19996 --- [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
 2022-10-27 15:31:23.031  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting..
+2022-10-27 15:31:23.048  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting App using Java 17.0.3 on VAMUX with PID 19996 (D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot)
+2022-10-27 15:31:23.049  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : No active profile set, falling back to 1 default profile: "default"
+2022-10-27 15:31:23.144  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-27 15:31:23.150  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-10-27 15:31:23.198  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-10-27 15:31:23.198  INFO 19996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-27 15:31:23.198  INFO 19996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-27 15:31:23.212  INFO 19996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-27 15:31:23.212  INFO 19996 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 163 ms
+2022-10-27 15:31:23.229  INFO 19996 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-27 15:31:23.231  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2022-10-27 15:31:23.240  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2022-10-27 15:31:23.241  INFO 19996 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-27 15:31:23.263  INFO 19996 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-27 15:31:23.263  INFO 19996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:31:23.308  WARN 19996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-27 15:31:23.770  INFO 19996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-27 15:31:23.782  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-10-27 15:31:23.788  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started App in 0.755 seconds (JVM running for 1758.199)
+2022-10-27 15:31:23.791  INFO 19996 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-27 15:31:23.791  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started
+2022-10-27 15:31:25.926  INFO 19996 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-27 15:31:25.928  INFO 19996 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-27 15:31:25.929  INFO 19996 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-27 15:31:26.133  INFO 19996 --- [http-nio-8082-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 50 ms
+2022-10-27 15:31:43.840  INFO 19996 --- [http-nio-8082-exec-6] c.b.springboot.service.EmployeeService   : getEmployeeById 101
+2022-10-27 15:31:53.924  INFO 19996 --- [http-nio-8082-exec-7] c.b.springboot.service.EmployeeService   : getEmployeeById 125
+2022-10-27 15:31:53.927 ERROR 19996 --- [http-nio-8082-exec-7] c.b.springboot.service.EmployeeService   : Employee with eid 125 not found.
+2022-10-27 15:31:53.930  WARN 19996 --- [http-nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.barclays.springboot.exception.EmployeeNotFoundException: Employee with eid 125 not found.]
+2022-10-27 15:34:44.311  INFO 19996 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-27 15:34:44.318  INFO 19996 --- [Thread-67] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-27 15:34:44.318  INFO 19996 --- [Thread-67] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-10-27 15:34:44.320  INFO 19996 --- [Thread-67] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:34:44.320  INFO 19996 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2022-10-27 15:34:44.325  INFO 19996 --- [Thread-67] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2022-10-27 15:34:44.369  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting..
+2022-10-27 15:34:44.393  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting App using Java 17.0.3 on VAMUX with PID 19996 (D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot)
+2022-10-27 15:34:44.394  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : No active profile set, falling back to 1 default profile: "default"
+2022-10-27 15:34:44.543  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-27 15:34:44.552  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2022-10-27 15:34:44.615  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-10-27 15:34:44.616  INFO 19996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-27 15:34:44.616  INFO 19996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-27 15:34:44.633  INFO 19996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-27 15:34:44.633  INFO 19996 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 238 ms
+2022-10-27 15:34:44.662  INFO 19996 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-27 15:34:44.665  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2022-10-27 15:34:44.678  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2022-10-27 15:34:44.678  INFO 19996 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-27 15:34:44.710  INFO 19996 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-27 15:34:44.710  INFO 19996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:34:44.886  WARN 19996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-27 15:34:45.884  INFO 19996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-27 15:34:45.896  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-10-27 15:34:45.901  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started App in 1.525 seconds (JVM running for 1960.312)
+2022-10-27 15:34:45.902  INFO 19996 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-27 15:34:45.902  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started
+2022-10-27 15:35:18.510  INFO 19996 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-27 15:35:18.543  INFO 19996 --- [Thread-71] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-27 15:35:18.545  INFO 19996 --- [Thread-71] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:35:18.546  INFO 19996 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2022-10-27 15:35:18.628  INFO 19996 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2022-10-27 15:35:18.680  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting..
+2022-10-27 15:35:18.709  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting App using Java 17.0.3 on VAMUX with PID 19996 (D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot)
+2022-10-27 15:35:18.709  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : No active profile set, falling back to 1 default profile: "default"
+2022-10-27 15:35:19.162  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-27 15:35:19.188  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interfaces.
+2022-10-27 15:35:19.357  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-10-27 15:35:19.358  INFO 19996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-27 15:35:19.358  INFO 19996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-27 15:35:19.393  INFO 19996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-27 15:35:19.393  INFO 19996 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 681 ms
+2022-10-27 15:35:19.423  INFO 19996 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-27 15:35:19.426  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2022-10-27 15:35:19.444  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2022-10-27 15:35:19.444  INFO 19996 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-27 15:35:19.465  INFO 19996 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-27 15:35:19.466  INFO 19996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:35:19.544  WARN 19996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-27 15:35:20.004  INFO 19996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-27 15:35:20.017  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-10-27 15:35:20.023  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started App in 1.336 seconds (JVM running for 1994.433)
+2022-10-27 15:35:20.024  INFO 19996 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-27 15:35:20.024  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started
+2022-10-27 15:35:24.477  INFO 19996 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-27 15:35:24.485  INFO 19996 --- [Thread-75] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-27 15:35:24.488  INFO 19996 --- [Thread-75] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:35:24.489  INFO 19996 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2022-10-27 15:35:24.492  INFO 19996 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2022-10-27 15:35:24.532  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting..
+2022-10-27 15:35:24.553  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting App using Java 17.0.3 on VAMUX with PID 19996 (D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot)
+2022-10-27 15:35:24.553  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : No active profile set, falling back to 1 default profile: "default"
+2022-10-27 15:35:24.817  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-27 15:35:24.822  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-10-27 15:35:24.958  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-10-27 15:35:24.958  INFO 19996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-27 15:35:24.958  INFO 19996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-27 15:35:24.979  INFO 19996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-27 15:35:24.979  INFO 19996 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 423 ms
+2022-10-27 15:35:25.305  INFO 19996 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-27 15:35:25.325  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2022-10-27 15:35:25.357  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2022-10-27 15:35:25.357  INFO 19996 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-27 15:35:25.415  INFO 19996 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-27 15:35:25.416  INFO 19996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:35:25.542  WARN 19996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-27 15:35:26.017  INFO 19996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-27 15:35:26.027  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-10-27 15:35:26.031  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started App in 1.494 seconds (JVM running for 2000.442)
+2022-10-27 15:35:26.032  INFO 19996 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-27 15:35:26.032  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started
+2022-10-27 15:36:07.082  INFO 19996 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-10-27 15:36:07.088  INFO 19996 --- [Thread-79] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-27 15:36:07.090  INFO 19996 --- [Thread-79] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:36:07.090  INFO 19996 --- [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2022-10-27 15:36:07.093  INFO 19996 --- [Thread-79] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2022-10-27 15:36:07.126  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting..
+2022-10-27 15:36:07.147  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting App using Java 17.0.3 on VAMUX with PID 19996 (D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot)
+2022-10-27 15:36:07.148  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : No active profile set, falling back to 1 default profile: "default"
+2022-10-27 15:36:07.258  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-27 15:36:07.262  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-10-27 15:36:07.300  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-10-27 15:36:07.300  INFO 19996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-27 15:36:07.300  INFO 19996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-27 15:36:07.311  INFO 19996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-27 15:36:07.312  INFO 19996 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 163 ms
+2022-10-27 15:36:07.327  INFO 19996 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-27 15:36:07.331  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2022-10-27 15:36:07.340  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2022-10-27 15:36:07.340  INFO 19996 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-27 15:36:07.358  INFO 19996 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-27 15:36:07.358  INFO 19996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:36:07.476  WARN 19996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-27 15:36:08.301  INFO 19996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-27 15:36:08.312  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-10-27 15:36:08.319  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started App in 1.19 seconds (JVM running for 2042.73)
+2022-10-27 15:36:08.321  INFO 19996 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-27 15:36:08.321  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Started
+2022-10-27 15:36:33.467  INFO 19996 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 12 class path changes (0 additions, 0 deletions, 12 modifications)
+2022-10-27 15:36:33.482  INFO 19996 --- [Thread-83] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-10-27 15:36:33.487  INFO 19996 --- [Thread-83] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:36:33.487  INFO 19996 --- [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2022-10-27 15:36:33.490  INFO 19996 --- [Thread-83] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2022-10-27 15:36:33.528  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting..
+2022-10-27 15:36:33.548  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : Starting App using Java 17.0.3 on VAMUX with PID 19996 (D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot\target\classes started by DELL in D:\VamanPro\Codes\STS_WS\STS_Barclays\com-barclays-springboot)
+2022-10-27 15:36:33.548  INFO 19996 --- [restartedMain] com.barclays.springboot.App              : No active profile set, falling back to 1 default profile: "default"
+2022-10-27 15:36:33.634  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-27 15:36:33.639  INFO 19996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interfaces.
+2022-10-27 15:36:33.683  INFO 19996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-10-27 15:36:33.684  INFO 19996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-27 15:36:33.684  INFO 19996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-27 15:36:33.696  INFO 19996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-27 15:36:33.696  INFO 19996 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 147 ms
+2022-10-27 15:36:33.714  INFO 19996 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-27 15:36:33.717  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2022-10-27 15:36:33.724  INFO 19996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2022-10-27 15:36:33.724  INFO 19996 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-27 15:36:33.740  INFO 19996 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-27 15:36:33.740  INFO 19996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-27 15:36:33.787  WARN 19996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-27 15:36:34.074  INFO 19996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
