@@ -14,5 +14,7 @@ public class Department {
 	private String department_name;
 
 	private String city;
+	
+	// List<Emnployee>
 
 }

@@ -53,6 +53,14 @@ public class Employee {
 		this.salary = salary;
 	}
 
+	public Employee(int employeeId, String firstName, double salary, Department department) {
+		super();
+		this.employeeId = employeeId;
+		this.firstName = firstName;
+		this.salary = salary;
+		this.deparetment = department;
+	}
+
 	public int getEmployeeId() {
 		return employeeId;
 	}
@@ -77,9 +85,18 @@ public class Employee {
 		this.salary = salary;
 	}
 
+	public Department getDeparetment() {
+		return deparetment;
+	}
+
+	public void setDeparetment(Department deparetment) {
+		this.deparetment = deparetment;
+	}
+
 	@Override
 	public String toString() {
-		return "Employee [employeeId=" + employeeId + ", firstName=" + firstName + ", salary=" + salary + "]";
+		return "Employee [employeeId=" + employeeId + ", firstName=" + firstName + ", salary=" + salary
+				+ ", deparetment=" + deparetment + "]";
 	}
 
 }
