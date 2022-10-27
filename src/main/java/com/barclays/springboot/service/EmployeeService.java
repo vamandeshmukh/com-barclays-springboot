@@ -14,10 +14,8 @@ public class EmployeeService {
 	@Autowired
 	EmployeeRepository empRepository;
 
-//	insert into emp_table (employee_id, first_name, salary) values (101, 'Sonu', 90000);
-
 	public Employee getEmployeeById(int employeeId) {
-		Optional<Employee> empOptional = empRepository.findById(employeeId);
+		Optional<Employee> empOptional = empRepository.findById(employeeId); // 101 102
 		Employee emp = empOptional.get();
 		System.out.println(emp.toString());
 		return emp;
